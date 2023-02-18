@@ -1,4 +1,4 @@
-<form action="save_create_people.php" method="post">
+<form action="save_creat_people.php" method="POST">
     ID Card : <input type="text" name="IDcard"><br>
         Titie name : <select name="tname">
             <option value="select">select</option>

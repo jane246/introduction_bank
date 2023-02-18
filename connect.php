@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "cpe224";
-$password = "YES";
+$username = "root";
+$password = "";
 $db_name = "bankdb";
 
 // Create connection
