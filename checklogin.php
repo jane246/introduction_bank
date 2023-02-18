@@ -5,10 +5,11 @@
     <?php
     require("connect.php");
     $account_name=$_POST["account_name"];
+    $email=$_POST["email"];
     $password=$_POST["password"];
 
     echo $account_name.$password;
-    $sql = "SELECT * FROM bank WHERE account_name='$account_name' AND password='$password'";
+    $sql = "SELECT * FROM bank WHERE password='$password' AND (account_name='$account_name' OR email='$email')";
     $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -17,7 +18,7 @@ if ($result->num_rows > 0) {
     header( "location: data_people.php" );
   }
 } else {
-  echo '<a onclick="return alert("66666")"></a>';
+    header( "location: login.php");
 }
     ?>
 </body>
