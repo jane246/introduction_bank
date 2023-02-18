@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$db_name = "bankdb";
+$db_name = "bank";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $db_name);
@@ -11,7 +11,6 @@ $conn = new mysqli($servername, $username, $password, $db_name);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-echo "เชื่อมต่อระบบฐานข้อมูลสำเร็จ";
 
 /*$link = mysqli_connect($servername, $username, $password, $db_name);
 if(!$link)

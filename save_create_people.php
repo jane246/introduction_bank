@@ -1,22 +1,38 @@
 <?php
 require("connect.php");
 
-$IDcard=$_POST["IDcard"];
-$tname=$_POST["tname"];
+$id_card=$_POST["id_card"];
+$titlename=$_POST["titlename"];
 $name=$_POST["name"];
 $number=$_POST["number"];
 $email=$_POST["email"];
 $birthday=$_POST["birthday"];
 $age=$_POST["age"];
-$username=$_POST["username"];
+$account_name=$_POST["account_name"];
 $money=$_POST["money"];
 $address=$_POST["address"];
 $password=$_POST["password"];
-
-
 //echo "fname:$fname lname:$lname age:$age sex:$sex marry_status:$marry_status";
-$sql="INSERT INTO survey(IDcard,tname,name,number,email,birthday,age,username,money,address,password)";
-$sql.=" VALUES('$IDcard','$tname','$name','$number','$email','$birthday','$age','$username','$money','$address','$password')";
+//echo "IDcard:$id_card tname:$titlename flname:$name pnumber:$number email:$email birthday:$birthday age:$age username:$account_name mmoney:$money aaddress:$address ppassword:$password";
+//$sql="INSERT INTO bankdb(IDcard,tname,flname,pnumber,email,birthday,age,username,mmoney,aaddress,ppassword)";
+$sql="INSERT INTO bank(id_card,titlename,name,number,email,birthday,age,account_name,money,address,password)";
+$sql.=" VALUES('$id_card','$titlename','$name','$number','$email','$birthday','$age','$account_name','$money','$address','$password')";
 $conn->query($sql);
-header( "location: data_people.php" );
+//echo $sql;
+//header( "location: data_people.php" );
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>BANK</title>
+</head>
+<body>
+    <form>
+        <img src="./images/forget1.png" width="100px" height="100px"><br>
+        <br>
+        <a>Account created successfully</a>
+        <br>  
+        <a href="login.php">Go to the next page</a>             
+    </form>  
+</body>
+</html>
