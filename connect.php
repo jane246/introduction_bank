@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$username = "bankdb";
+$username = "cpe224";
 $password = "YES";
 $db_name = "bankdb";
 
