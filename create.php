@@ -1,12 +1,10 @@
 <form action="save_create_people.php" method="post">
     ID Card : <input type="text" name="IDcard"><br>
         Titie name : <select name="tname">
-            <option value="เลือก">เลือก</option>
-            <option value="เด็กชาย">เด็กชาย</option>
-            <option value="เด็กหญิง">เด็กหญิง</option>
-            <option value="นาย">นาย</option>
-            <option value="นาง">นาง</option>
-            <option value="นางสาว">นางสาว</option>
+            <option value="select">select</option>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Ms">Ms</option>
         </select><br>
     First name - Last name : <input type="text" name="name"><br>
     Phon number : <input type="text" name="number"><br>

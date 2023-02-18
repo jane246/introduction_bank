@@ -1,5 +1,5 @@
 <?php
-require("connect_db.php");
+require("connect.php");
 
 $id=$_GET["id"];
 
