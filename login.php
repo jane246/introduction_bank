@@ -4,11 +4,11 @@
 <title>BANK</title>
 </head>
 <body>
-    <form action="data_people.php" method="post">
+    <form>(--action="checklogin.php" method="post">--)
         <img src="./images/login1.png" width="100px" height="100px"><br>
         <br>
         <br>
-        Username or Email : <input type = "text" name = "username"><br>
+        Username or Email : <input type = "text" name = "account_name"><br>
         Password : <input type = "text" name = "password"><br>
         <input type = "submit" value = "Login">
         <br>  

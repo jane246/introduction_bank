@@ -28,11 +28,10 @@ $conn->query($sql);
 </head>
 <body>
     <form>
-        <img src="./images/forget1.png" width="100px" height="100px"><br>
         <br>
         <a>Account created successfully</a>
         <br>  
-        <a href="login.php">Go to the next page</a>             
+        <a href="data_people.php">Go to the next page</a>             
     </form>  
 </body>
 </html>
