@@ -16,7 +16,7 @@
     }
     label{
         display: inline-block;
-        width: 200px;
+        width: 150px;
         margin-bottom: 10px;
     }
 </style>
