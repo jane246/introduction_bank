@@ -7,11 +7,14 @@
     
     $sql = "SELECT * FROM statement WHERE account_id='$account_id'";    
     $result = $conn->query($sql);
-    
+    echo "time:"."<br>";;
     if ($result->num_rows > 0)
-        $row = $result->fetch_assoc();
+        while($row = $result->fetch_assoc())
+        {
         $sql = "SELECT ALL * FROM statement WHERE account_id='$account_id'";
-        echo $row['time']      
+        //echo $row['time','deposit','withdraw','comment'];
+        echo $row['time']." ".$row['deposit']." ".$row['withdraw']." ".$row['comment']."<br>";   
+        }    
 ?>  
 
 </form>
