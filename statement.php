@@ -2,15 +2,15 @@
 <html>
     <head>
         <style>
-            body {
-	            background-image: url("");
-            }
             table, th, td{
-                border: 5px solid #FF9999;
+                border: 10px solid #000066;
                 border-collapse: collapse;
                 padding: 20px;
+                font-family: fantasy;
+                font-size: 2ex;
+                text-align: center;
             }
-
+            
         </style>
     </head>
 <body>

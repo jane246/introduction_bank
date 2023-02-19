@@ -21,7 +21,7 @@
     <a href="edit_people.php?account_id=<?php echo $account_id; ?>">EDIT</a><br>
     <a href="delete_people.php?account_id=<?php echo $account_id; ?>">DELETE</a><br>
     <a>BANK</a><br>
-    <a href="index.php">LOGOUT</a><br>
+    <a href="index.php?">LOGOUT</a><br>
 
     <form action="deposit.php">
     <input type="hidden" name="account_id" value="<?php print($account_id); ?>">
