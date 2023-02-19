@@ -93,7 +93,7 @@
 <p1>
     <form action="deposit.php">
     <input type="hidden" name="account_id" value="<?php print($account_id); ?>">
-        <label>Money</label> <input type = "text" name = "deposit" style = ><br>
+        <label>Money</label> <input type = "text" name = "deposit" placeholder ="ฝากเงิน"><br>
         <label>Comment</label> <input type = "text" name = "comment"><br>
         <h1><input type="submit" value="DEPOSIT"style="background-color:#003366; color:white; font-size:13px; border-radius:5px; font-family:verdana;"></h1>
     </form>
@@ -102,7 +102,7 @@
 <p2>
     <form action="withdraw.php">
     <input type="hidden" name="account_id" value="<?php print($account_id); ?>">
-        <label>Money</label> <input type = "text" name = "withdraw"><br>
+        <label>Money</label> <input type = "text" name = "withdraw"placeholder ="ถอนเงิน"><br>
         <label>Comment</label> <input type = "text" name = "comment"><br>
         <h1><input type="submit" value="WITHDRAW"style="background-color:#003366; color:white; font-size:13px; border-radius:5px; font-family:verdana;"></h1>
     </form>
@@ -111,8 +111,8 @@
 <p3>
     <form action="tranfer.php">
     <input type="hidden" name="account_id" value="<?php print($account_id); ?>">
-        <label>Person</label> <input type = "text" name = "person"><br>
-        <label>Money</label> <input type = "text" name = "M"><br>
+        <label>Person</label> <input type = "text" name = "person"placeholder ="ผู้รับ"><br>
+        <label>Money</label> <input type = "text" name = "M"placeholder ="โอนเงิน"><br>
         <label>Comment</label> <input type = "text" name = "comment"><br>
         <h1><input type="submit" value="TRANFER"style="background-color:#003366; color:white; font-size:13px; border-radius:5px; font-family:verdana;"></h1><hr>
     </form>
