@@ -11,9 +11,6 @@
         justify-content: center;
         height: 100vh;
         background: #a4b6d7;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
         height: calc(var(--vh, 1vh) * 100);
         overflow: hidden;
         color: rgb(var(--color));
