@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>ลงทะเบียน</title>
+<style>
+</style>
+
+</head>
+
 
 <body>    
     <?php

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-</head>
 <title>ลงทะเบียน</title>
 <style>
     body {
@@ -27,6 +26,7 @@
         justify-content: center;
     }
 </style>
+</head>
 <body>
 
 <form action="save_create_people.php" method="post">
