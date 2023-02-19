@@ -2,24 +2,13 @@
 <html>
 
 <body>
-    <a href="edit_people.php">EDIT</a><br>
+    <a href="edit_people.php?account_id=$account_id">EDIT</a><br>
     <a href="delete_people.php?account_id=$account_id">DELETE</a><br>
     <a>BANK</a><br>
     <a href="index.php">LOGOUT</a><br>
     <?php
     require("connect.php");
     $account_id=$_GET["account_id"];
-    $id_card="";
-    $titlename="";
-    $name="";
-    $number="";
-    $email="";
-    $birthday="";
-    $age="";
-    $account_name="";
-    $money="";
-    $address="";
-    $password="";
 
     $sql = "SELECT * FROM bank WHERE account_id='$account_id'";
     $result = $conn->query($sql);
