@@ -1,4 +1,10 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+<title>BANK</title>
+</head>
+<body>
+    <a>CREATE</a>
 <form action="save_create_people.php" method="post">
     ID Card : <input type="text" name="id_card"><br>
     Titie name : <select name="titlename">
@@ -18,3 +24,5 @@
     Password : <input type="text" name="password"><br>
     <input type="submit" value="CREATE">
 </form>
+</body>
+</html>
