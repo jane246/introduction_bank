@@ -6,7 +6,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background:#708090;
+        background:#a4b6d7;
         height: calc(var(--vh, 1vh) * 100);
         overflow: hidden;
         width: 100%;      

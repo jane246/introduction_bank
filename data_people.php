@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ลงทะเบียน</title>
+<title>หน้าการใช้งาน</title>
 <style>
+    body{
+        background:#a4b6d7;
+    }
+    p{
+        color : "red";
+    }
+
 </style>
 
 </head>
@@ -17,8 +24,7 @@
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            echo "DATA";
-            "<br>";
+            echo "DATA"."<br>";
             echo "Name : ".$row["titlename"]." ".$row["name"]. "<br>";
             echo "Account number : ".$row["account_id"]. "<br>";
             echo "Money : ".$row["money"]. "<br>";
