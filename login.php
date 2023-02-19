@@ -10,7 +10,7 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
-        background: #f5b8e7;
+        background: #a4b6d7;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
