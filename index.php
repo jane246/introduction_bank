@@ -84,6 +84,7 @@
         opacity: 0;
         transition: all .25s ease;
     }
+    
 </style>
 </head>
 <body>

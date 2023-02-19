@@ -10,19 +10,28 @@
         height: 100vh;
         background: #a4b6d7;
         overflow: hidden;
-        width: 100%;
-        height: 100vh;
-        font-size: 200%;
+    }
+    a1{
+        font-family:Impact;
+        font-size: 300%;
+    }
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    a{
+        font-size: 150%;
     }
 </style>
 </head>
 <body>
     <form>
-        <img src="./images/forget1.png" width="100px" height="100px"><br>
+        <p><img src="./images/forget1.png" width="300px" height="300px"></p><br>
         <br>
-        <a>Please contact the bank.</a>
+        <a1>Please contact the bank.</a1>
         <br>
-        <a>Tel. 08X-XXX-XXXX</a>
+        <a1>Tel. 08X-XXX-XXXX</a1>
         <br>  
         <a href="login.php">Oh! , I understand</a>             
     </form>  
