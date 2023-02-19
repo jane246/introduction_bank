@@ -10,12 +10,10 @@
         height: 100vh;
         background: #a4b6d7;
         overflow: hidden;
-        width: 100%;
-        height: 100vh;
-        font-size: 200%;
     }
     a1{
         font-family:Impact;
+        font-size: 300%;
     }
     p{
         display: flex;
