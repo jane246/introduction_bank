@@ -2,8 +2,11 @@
 <html>
     <head>
         <style>
+            body {
+	            background-image: url("");
+            }
             table, th, td{
-                border: 1px solid #000;
+                border: 5px solid #FF9999;
                 border-collapse: collapse;
                 padding: 20px;
             }

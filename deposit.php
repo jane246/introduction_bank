@@ -19,8 +19,6 @@
         $sql = "INSERT INTO statement(account_id,deposit,withdraw,time,comment)";
         $sql.=" VALUES('$account_id','$deposit','0',NOW(),'$comment')";
         $conn->query($sql);
-
-
         $sql = "UPDATE bank SET money = '{$dep}' WHERE account_id = '{$account_id}'";
         $conn->query($sql);
     header( "location: data_people.php?account_id=$account_id" );
