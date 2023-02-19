@@ -25,6 +25,27 @@ $conn->query($sql);
 <html>
 <head>
 <title>BANK</title>
+<style>
+    body {
+        --primary: 25,91,255;
+        --color: 44, 62, 80;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: #f5b8e7;
+        height: calc(var(--vh, 1vh) * 100);
+        overflow: hidden;
+        color: rgb(var(--color));
+        width: 100%;
+        height: 100vh;
+    }
+    a{
+        display: inline-block;
+        width: 150px;
+        margin-bottom: 10px;
+    }
+</style>
 </head>
 <body>
     <form>
