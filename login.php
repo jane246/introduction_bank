@@ -22,6 +22,9 @@
         margin-bottom: 10px;
         font-size: 180%;
     }
+    botton{
+        background: #edc42f;
+    }
     </style>
 </head>
 <body>
@@ -34,7 +37,7 @@
         <a href="forget.php">FORGET</a>
         <a href="create.php?">CREATE</a>  
         <br>
-        <p><input type = "submit" value = "Login"></p>
+        <botton type = "submit" value = "Login"></botton>
                     
     </form> 
 </body>
