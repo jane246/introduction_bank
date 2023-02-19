@@ -57,7 +57,7 @@
         top: 0px;
         left: 0px;
         transform: scale(.1);
-        background: #A0522D;
+        background: #CD5C5C;
         z-index: -1;
         opacity: 0;
         transition: all .25s ease;
@@ -79,7 +79,7 @@
         top: 0px;
         left: 0px;
         transform: scale(.1);
-        background: #A0522D;
+        background: #CD5C5C;
         z-index: -1;
         opacity: 0;
         transition: all .25s ease;
