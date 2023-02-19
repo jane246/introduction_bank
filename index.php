@@ -8,14 +8,14 @@
     body {
        
         display: flex;
-        align-items: center;
+      
         background: #f5b8e7;
       	background-image: url(https://static.vecteezy.com/system/resources/previews/010/518/840/original/digital-finance-and-banking-service-in-futuristic-background-bank-building-with-online-payment-transaction-secure-money-and-financial-innovation-technology-vector.jpg);        
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;     
         overflow: hidden;    
-        width: 10%;
+        width: 100%;
         height: 100vh;    
     }
     * {
