@@ -27,7 +27,7 @@
         font-family:Impact;
         box-sizing: border-box;
         color:white;
-        font-size: 300%
+        font-size: 200%
     } 
     button {
         padding: 20px 50px;
