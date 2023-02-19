@@ -2,11 +2,17 @@
 <html>
     <head>
         <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
             table, th, td{
                 border: 1px solid #000;
                 border-collapse: collapse;
                 padding: 20px;
             }
+
         </style>
     </head>
 <body>
