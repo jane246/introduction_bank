@@ -44,6 +44,7 @@ $conn->query($sql);
         display: inline-block;
         width: 150px;
         margin-bottom: 10px;
+        font-size: 300%;
     }
 </style>
 </head>
