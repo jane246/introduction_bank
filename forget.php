@@ -3,7 +3,7 @@
 <head>
 <title>BANK</title>
 <style>
-    body {
+    a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -18,7 +18,7 @@
 </head>
 <body>
     <form>
-        <img src="./images/forget1.png" width="100px" height="100px"><br>
+        <p><img src="./images/forget1.png" width="100px" height="100px"></p><br>
         <br>
         <a>Please contact the bank.</a>
         <br>
