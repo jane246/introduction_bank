@@ -27,7 +27,7 @@ $conn->query($sql);
 <title>BANK</title>
 <style>
     body {
-        background: #f5b8e7;
+        background: #a4b6d7;
         
     }
     a1{
