@@ -39,4 +39,3 @@
     Password : <input type="text" name="password" placeholder ="รหัสผ่าน"><br>
     <input type="submit" value="CREATE">
 </form>
-</body>

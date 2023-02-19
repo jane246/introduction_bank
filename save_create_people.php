@@ -31,7 +31,7 @@ $conn->query($sql);
         <br>
         <a>Account created successfully</a>
         <br>  
-        <a href="data_people.php">Go to the next page</a>             
+        <a href="login.php">Back to the login page</a>             
     </form>  
 </body>
 </html>

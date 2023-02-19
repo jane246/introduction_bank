@@ -9,7 +9,7 @@
     $result = $conn->query($sql);
     if ($result->num_rows > 0)
         $row = $result->fetch_assoc();
-?>    
+?>  
 <form action="save_edit_people.php" method="post">
     <input type="hidden" name="account_id" value="<?php print($row["account_id"]); ?>">
     Titie name : <select name="titlename">
