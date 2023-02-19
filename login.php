@@ -3,7 +3,14 @@
 <head>
 <title>ลงชื่อเข้าใช้</title>
 <style>
-  
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: #a4b6d7;
+        overflow: hidden;
+    }
     p{
         display: flex;
         align-items: center;
@@ -14,6 +21,7 @@
         width: 150px;
         margin-bottom: 10px;
     }
+    </style>
 </head>
 <body>
     <form action="checklogin.php" method="post">
