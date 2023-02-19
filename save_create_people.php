@@ -40,7 +40,7 @@ $conn->query($sql);
         width: 100%;
         height: 100vh;
     }
-    a{
+    a1{
         display: inline-block;
         width: 150px;
         margin-bottom: 10px;
@@ -51,7 +51,7 @@ $conn->query($sql);
 <body>
     <form>
         <br>
-        <a>Account created successfully</a>
+        <a1>Account created successfully</a1>
         <br>  
         <a href="login.php">Back to the login page</a>             
     </form>  
