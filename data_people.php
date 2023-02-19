@@ -6,7 +6,7 @@
     body{
         background:#a4b6d7;
     }
-    p{
+    {
         color : "red";
     }
 
@@ -31,9 +31,10 @@
         }
     }
     ?>
-    <a href="edit_people.php?account_id=<?php echo $account_id; ?>">EDIT</a><br>
+
+    <a href="edit_people.php?account_id=<?php echo $account_id; ?>">EDIT</a>
     <a href="delete_people.php?account_id=<?php echo $account_id; ?>">DELETE</a><br>
-    <a>BANK</a><br>
+    <b>BANK</b><br>
     <a href="index.php?">LOGOUT</a><br>
 
     <form action="deposit.php">
