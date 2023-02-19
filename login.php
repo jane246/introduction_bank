@@ -31,7 +31,7 @@
         <label>Username :</label> <input type = "text" name = "account_name" placeholder ="ชื่อบัญชี"> <br>
         <label>Password :</label> <input type = "text" name = "password"placeholder ="รหัสผ่าน"><br>
         <br>
-        <botton><p><input type = "submit" value = "Login"></p></botton>
+        <botton style = "background-color: ##edc42f;"><p><input type = "submit" value = "Login"></p></botton>
         <br>  
         <a href="forget.php">FORGET</a>
         <a href="create.php?">CREATE</a>  
