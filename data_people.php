@@ -5,17 +5,71 @@
 <style>
     body{
         background:#a4b6d7;
+        
     }
-    {
-        color : "red";
+    h{
+        font-size :150% ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        font-family:Impact;
+        background-color:#191970;
+        color:white;
     }
-
+    label{
+        display: inline-block;
+        width: 90px;
+        margin-bottom: 10px;
+        font-family:verdana;
+        color: #000033;
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    p1{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    p2{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    p3{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h2{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    h3{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        font-family:verdana;
+    }
+    a{
+        color:black;
+    }
 </style>
-
 </head>
-
-
-<body>    
+<body>
+    <h>INFORMATION</h>
+    <h3>    
     <?php
     require("connect.php");
     $account_id=$_GET["account_id"];
@@ -24,53 +78,50 @@
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            echo "DATA"."<br>";
             echo "Name : ".$row["titlename"]." ".$row["name"]. "<br>";
             echo "Account number : ".$row["account_id"]. "<br>";
             echo "Money : ".$row["money"]. "<br>";
         }
     }
     ?>
-
-    <a href="edit_people.php?account_id=<?php echo $account_id; ?>">EDIT</a>
-    <a href="delete_people.php?account_id=<?php echo $account_id; ?>">DELETE</a><br>
-    <b>BANK</b><br>
-    <a href="index.php?">LOGOUT</a><br>
-
+    </h3>
+    <a href="edit_people.php?account_id=<?php echo $account_id; ?>">Edit</a>
+    <a>,</a>
+    <a href="delete_people.php?account_id=<?php echo $account_id; ?>">Delete</a><br>
+    <br>
+    <h>BANK</h><br>
+<p1>
     <form action="deposit.php">
     <input type="hidden" name="account_id" value="<?php print($account_id); ?>">
-        Money <input type = "text" name = "deposit"><br>
-        Comment <input type = "text" name = "comment"><br>
-        <input type="submit" value="DEPOSIT">
+        <label>Money</label> <input type = "text" name = "deposit" style = ><br>
+        <label>Comment</label> <input type = "text" name = "comment"><br>
+        <h1><input type="submit" value="DEPOSIT"style="background-color:#003366; color:white; font-size:13px; border-radius:5px; font-family:verdana;"></h1>
     </form>
     <br>
-
+</p1>   
+<p2>
     <form action="withdraw.php">
     <input type="hidden" name="account_id" value="<?php print($account_id); ?>">
-        Money <input type = "text" name = "withdraw"><br>
-        Comment <input type = "text" name = "comment"><br>
-    <input type="submit" value="WITHDRAW">
+        <label>Money</label> <input type = "text" name = "withdraw"><br>
+        <label>Comment</label> <input type = "text" name = "comment"><br>
+        <h1><input type="submit" value="WITHDRAW"style="background-color:#003366; color:white; font-size:13px; border-radius:5px; font-family:verdana;"></h1>
     </form>
     <br>
-
+</p2>
+<p3>
     <form action="tranfer.php">
     <input type="hidden" name="account_id" value="<?php print($account_id); ?>">
-        Person <input type = "text" name = "person"><br>
-        Money <input type = "text" name = "M"><br>
-        Comment <input type = "text" name = "comment"><br>
-    <input type="submit" value="TRANFER">
+        <label>Person</label> <input type = "text" name = "person"><br>
+        <label>Money</label> <input type = "text" name = "M"><br>
+        <label>Comment</label> <input type = "text" name = "comment"><br>
+        <h1><input type="submit" value="TRANFER"style="background-color:#003366; color:white; font-size:13px; border-radius:5px; font-family:verdana;"></h1><hr>
     </form>
-    <br>
+    </p3>
 
     <form action="statement.php?account_id='$account_id'">
     <input type="hidden" name="account_id" value="<?php print($account_id); ?>">
-        <a>STATEMENT</a><br>
-        <input type="submit" value="STATEMENT">
+        <h2><input type="submit" value="STATEMENT"style="background-color:#003366; color:white; font-size:15px; border-radius:10px; font-family:verdana;"></h2>
     </form>
-
-
-    <a href="index.php">Back</a><br>
-
-
+    <a href="index.php?">Logout</a><br>
 </body>
 </html>
