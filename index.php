@@ -9,7 +9,6 @@
        
         display: flex;
         align-items: center;
-        justify-content: center;
         background: #f5b8e7;
       	background-image: url(https://media.istockphoto.com/id/839165784/photo/small-piggy-bank-over-blue-background-copy-space.jpg?s=170667a&w=0&k=20&c=ulcY_eI9OIZbO3RIlE0gRJN3mpS-Eiak-SZCrh5RGr4=);        
         background-position: center;
