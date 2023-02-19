@@ -44,6 +44,8 @@ $conn->query($sql);
         align-items: center;
         justify-content: center;
         color:black;
+        font-size: 150%;
+        
     }
 </style>
 </head>
@@ -52,7 +54,7 @@ $conn->query($sql);
         <br>
         <a1><b>Account created successfully</b></a1>
         <br>  
-        <a href="login.php">Back to the login page</a>             
+        <a href="login.php"><i>Back to the login page</i></a>             
     </form>  
 </body>
 </html>
