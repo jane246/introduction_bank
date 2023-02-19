@@ -45,7 +45,7 @@
     <br>
 
     <form action="statement.php?account_id='$account_id'">
-    <!--<input type="hidden" name="account_id" value="<?php print($account_id); ?>">-->
+    <input type="hidden" name="account_id" value="<?php print($account_id); ?>">
         <a>STATEMENT</a><br>
         <input type="submit" value="STATEMENT">
     </form>
