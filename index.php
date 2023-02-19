@@ -11,7 +11,8 @@
         align-items: center;
         justify-content: center;
         background: #f5b8e7;
-      	background-image: url(https://media.istockphoto.com/id/1061369956/photo/coin-stacks-and-chart-graphs-on-a-chessboard.jpg?b=1&s=170667a&w=0&k=20&c=zcumQNaDUpaKYiQDLiNTn0bGOIETe8rXIicHH0jcHpU=);        background-position: center;
+      	background-image: url(https://media.istockphoto.com/id/839165784/photo/small-piggy-bank-over-blue-background-copy-space.jpg?s=170667a&w=0&k=20&c=ulcY_eI9OIZbO3RIlE0gRJN3mpS-Eiak-SZCrh5RGr4=);        
+        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;     
         overflow: hidden;    
@@ -25,7 +26,8 @@
         margin: 0;
         font-family:Impact;
         box-sizing: border-box;
-        color:black;
+        color:white;
+        font-size: 200%
     } 
     button {
         padding: 20px 50px;
@@ -89,9 +91,8 @@
 </head>
 <body>
     <form>
-        <Button class="btn-1"><a href="create.php">CREATE</a></Button>
-        <Button class="btn-2"><a href="login.php">LOGIN</a></Button>
-
+     	<Button class="btn-1"><a href="login.php">LOGIN</a></Button>
+        <Button class="btn-2"><a href="create.php">CREATE</a></Button>
     </form>
 </body>
 
