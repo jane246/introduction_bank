@@ -36,7 +36,7 @@ $conn->query($sql);
         display: flex;
         align-items: center;
         justify-content: center;
-     	height: 100vh;
+     	height: 85vh;
         color:black;
     }
     a{
