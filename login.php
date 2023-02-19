@@ -15,6 +15,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 180%;
     }
     label{
         display: inline-block;
