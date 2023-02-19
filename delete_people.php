@@ -1,9 +1,9 @@
 <?php
 require("connect.php");
 
-$id=$_GET["id"];
+$account_id=$_GET["account_id"];
 
 $sql="DELETE FROM survey WHERE id=$id";
 $conn->query($sql);
-header( "location: list_people.php" );
+header( "location: index.php" );
 ?>
