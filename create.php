@@ -28,7 +28,7 @@
         <option value="Mrs">Mrs</option>
         <option value="Ms">Ms</option>
     </select><br>
-    First name - Last name : <input type="text" name="name"><br>
+    First name - Last name : <input type="text" name="name"placeholder ="ชื่อจริง-สกุลจริง"><br>
     Phon number : <input type="text" name="number" placeholder ="+66"><br>
     Email : <input type="text" name="email" placeholder ="example@mail.com"><br>
     Birthday : <input type="date" name="birthday"><br>
