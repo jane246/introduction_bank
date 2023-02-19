@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>หน้าการใช้งาน</title>
+<title>DATA</title>
 <style>
     body{
         background:#a4b6d7;
@@ -26,41 +26,10 @@
         align-items: center;
         justify-content: center;
     }
-    p{
+    p,p1,p2,p3,h1,h2,h3{
         display: flex;
         align-items: center;
         justify-content: center; 
-    }
-    p1{
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-    }
-    p2{
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-    }
-    p3{
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-    }
-    h1{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    h2{
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-    }
-    h3{
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-        font-family:verdana;
     }
     a{
         color:black;
@@ -111,7 +80,7 @@
 <p3>
     <form action="tranfer.php">
     <input type="hidden" name="account_id" value="<?php print($account_id); ?>">
-        <label>Person</label> <input type = "text" name = "person"placeholder ="ผู้รับ"><br>
+        <label>Person</label> <input type = "text" name = "person"placeholder ="เลขบัญชีผู้รับ"><br>
         <label>Money</label> <input type = "text" name = "M"placeholder ="โอนเงิน"><br>
         <label>Comment</label> <input type = "text" name = "comment"><br>
         <h1><input type="submit" value="TRANFER"style="background-color:#003366; color:white; font-size:13px; border-radius:5px; font-family:verdana;"></h1><hr>
