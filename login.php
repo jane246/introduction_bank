@@ -3,22 +3,17 @@
 <head>
 <title>ลงชื่อเข้าใช้</title>
 <style>
-    body {
-        --primary: 25,91,255;
+   body {
+        --primary: 237, 73, 86;
         --color: 44, 62, 80;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         height: 100vh;
-        background: #a4b6d7;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background: #F1F3F6;
         height: calc(var(--vh, 1vh) * 100);
         overflow: hidden;
         color: rgb(var(--color));
-        width: 100%;
-        height: 100vh;
     }
 </style>
 </head>
