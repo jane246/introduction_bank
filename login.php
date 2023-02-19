@@ -20,6 +20,7 @@
         width: 100%;
         height: 100vh;
     }
+</style>
 </head>
 <body>
     <form action="checklogin.php" method="post">
