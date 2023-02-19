@@ -20,12 +20,13 @@
         display: inline-block;
         width: 150px;
         margin-bottom: 10px;
+        font-size: 180%;
     }
     </style>
 </head>
 <body>
     <form action="checklogin.php" method="post">
-        <p><img src="./images/login1.png" width="100px" height="100px"></p><br>
+        <p><img src="./images/login1.png" width="300px" height="300px"></p><br>
         <br>
         <label>Username :</label> <input type = "text" name = "account_name" placeholder ="ชื่อบัญชี"> <br>
         <label>Password :</label> <input type = "text" name = "password"placeholder ="รหัสผ่าน"><br>
