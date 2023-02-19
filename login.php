@@ -3,29 +3,31 @@
 <head>
 <title>ลงชื่อเข้าใช้</title>
 <style>
-   body {
-        --primary: 25,91,255;
-        --color: 44, 62, 80;
+    body {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100vh;
         background: #a4b6d7;
-        height: calc(var(--vh, 1vh) * 100);
         overflow: hidden;
-        color: rgb(var(--color));
-        width: 100%;
-        height: 100vh;
     }
-</style>
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    label{
+        display: inline-block;
+        width: 150px;
+        margin-bottom: 10px;
+    }
 </head>
 <body>
     <form action="checklogin.php" method="post">
-        <img src="./images/login1.png" width="100px" height="100px"><br>
+        <p><img src="./images/login1.png" width="100px" height="100px"></p><br>
         <br>
-        <br>
-        Username : <input type = "text" name = "account_name" placeholder ="ชื่อบัญชี"> <br>
-        Password : <input type = "text" name = "password"placeholder ="รหัสผ่าน"><br>
+        <label>Username :</label> <input type = "text" name = "account_name" placeholder ="ชื่อบัญชี"> <br>
+        <label>Password :</label> <input type = "text" name = "password"placeholder ="รหัสผ่าน"><br>
         <br>
         <input type = "submit" value = "Login">
         <br>  
