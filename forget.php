@@ -14,15 +14,23 @@
         height: 100vh;
         font-size: 200%;
     }
+    a1{
+        font-family:Impact;
+    }
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 </style>
 </head>
 <body>
     <form>
         <p><img src="./images/forget1.png" width="100px" height="100px"></p><br>
         <br>
-        <a>Please contact the bank.</a>
+        <a1>Please contact the bank.</a1>
         <br>
-        <a>Tel. 08X-XXX-XXXX</a>
+        <a1>Tel. 08X-XXX-XXXX</a1>
         <br>  
         <a href="login.php">Oh! , I understand</a>             
     </form>  
