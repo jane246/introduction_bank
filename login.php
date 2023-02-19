@@ -27,8 +27,8 @@
         <img src="./images/login1.png" width="100px" height="100px"><br>
         <br>
         <br>
-        Username : <input type = "text" name = "account_name" placeholder ="your username"> <br>
-        Password : <input type = "text" name = "password"><br>
+        Username : <input type = "text" name = "account_name" placeholder ="ชื่อบัญชี"> <br>
+        Password : <input type = "text" name = "password"placeholder ="รหัสผ่าน"><br>
         <br>
         <input type = "submit" value = "Login">
         <br>  
