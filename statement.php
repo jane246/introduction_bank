@@ -10,12 +10,12 @@
                 font-size: 2ex;
                 text-align: center;
                 background-color:white;
-            }
+            }     
         </style>
     </head>
-    <body background=" images.jpg"></body>
-<body>
-    <table width="75%">
+<body bgcolor ="#003366">
+<img src="./images/pig-63.gif" align="right" width="35%" height="35%">
+    <table>
         <?php
             require("connect.php");
             $account_id=$_GET["account_id"];
@@ -36,7 +36,7 @@
         ?>  
     </table>
     <br>
-    <a href="data_people.php?account_id=<?php echo $account_id; ?>">Back</a><br>
+    <a href="data_people.php?account_id=<?php echo $account_id; ?>"><font color="#FFFFFF" size="5px">Back</font></a><br>
 </form>
 </body>
 </html>
