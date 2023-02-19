@@ -23,10 +23,23 @@
     <a>BANK</a><br>
     <a href="index.html">LOGOUT</a><br>
 
-    <a href="deposit.php?account_id=<?php echo $account_id; ?>">DEPOSIT</a><br>
-    <a href="withdrew.php?account_id=<?php echo $account_id; ?>">WITHDRAW</a><br>
-    <a href="tranfer.php?account_id=<?php echo $account_id; ?>">TRANSFER</a><br>
-    <a href="stament.php?account_id=<?php echo $account_id; ?>">STATEMENT</a><br>
+    <form action="deposit.php">
+    <input type="hidden" name="account_id" value="<?php print($account_id); ?>">
+        Money <input type = "text" name = "deposit"><br>
+        <input type="submit" value="DEPOSIT">
+    </form>
 
+    <form action="withdraw.php" method="post">
+    Money <input type = "text" name = "withdraw"><br>
+    <a href="withdrew.php?account_id=<?php echo $account_id; ?>">WITHDRAW</a><br>
+    <input type="submit" value="CREATE">
+    </form>
+
+    <form action="tranfer.php" method="post">
+    Money <input type = "text" name = "tranfer"><br>
+    <a href="tranfer.php?account_id=<?php echo $account_id; ?>">TRANSFER</a><br>
+    </form>
+
+    <a href="stament.php?account_id=<?php echo $account_id; ?>">STATEMENT</a><br>
 </body>
 </html>
