@@ -1,23 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
 <title>ลงทะเบียน</title>
 <style>
     body {
-        --primary: 25,91,255;
-        --color: 44, 62, 80;
+       
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100vh;
-        background: #f5b8e7;
+        background:#a4b6d7;
         height: calc(var(--vh, 1vh) * 100);
         overflow: hidden;
-        color: rgb(var(--color));
-        width: 100%;
-        height: 100vh;
+        width: 100%;      
     }
     label{
         display: inline-block;
         width: 150px;
         margin-bottom: 10px;
+        font-family:verdana;
+        color: #000033;
+    }
+    p{
+    	display: flex;
+        align-items: center;
+        justify-content: center;
     }
 </style>
 <body>
@@ -39,5 +46,6 @@
     <label>Money :</label> <input type="text" name="money" placeholder ="เงินฝากเริ่มต้น"><br>
     <label>Address :</label> <input type="text" name="address" placeholder ="Bangkok Thailand"><br>
     <label>Password :</label> <input type="text" name="password" placeholder ="รหัสผ่าน"><br>
-    <input type="submit" value="CREATE">
+    <p><input type="submit" value="CREATE" style="background-color:#003366; color:white; font-size:15px; border-radius:5px; font-family:verdana;"></p>
 </form>
+</html>

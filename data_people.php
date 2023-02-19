@@ -44,9 +44,7 @@
         Person <input type = "text" name = "person"><br>
         Money <input type = "text" name = "withdraw"><br>
         Comment <input type = "text" name = "comment"><br>
-    <input type="submit" value="WITHDRAW">
-    Money <input type = "text" name = "tranfer"><br>
-    <a href="tranfer.php?account_id=<?php echo $account_id; ?>">TRANSFER</a><br>
+    <input type="submit" value="TRANFER">
     </form>
     <br>
 
@@ -55,6 +53,10 @@
         <a>STATEMENT</a><br>
         <input type="submit" value="STATEMENT">
     </form>
+
+
+    <a href="index.php">Back</a><br>
+
 
 </body>
 </html>
