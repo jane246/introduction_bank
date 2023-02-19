@@ -6,31 +6,27 @@
 <title>BANK</title>
 <style>
     body {
-        --primary: 25,91,255;
-        --color: 44, 62, 80;
+       
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100vh;
         background: #f5b8e7;
-        background-image: url(https://i.insider.com/5c7fe48d262898027532ae26?width=1200&format=jpeg://img.freepik.com/premium-vector/bank-buildings-seamless-background-backdrop-financial-business-banking-website-economical-theme-ads-information-credits-savings-vector-wallpaper-web-site-background_570429-16311.jpg);
-        background-position: center;
+      	background-image: url(https://media.istockphoto.com/id/1061369956/photo/coin-stacks-and-chart-graphs-on-a-chessboard.jpg?b=1&s=170667a&w=0&k=20&c=zcumQNaDUpaKYiQDLiNTn0bGOIETe8rXIicHH0jcHpU=);        background-position: center;
         background-size: cover;
-        background-repeat: no-repeat;
-        height: calc(var(--vh, 1vh) * 100);
-        overflow: hidden;
-        color: rgb(var(--color));
+        background-repeat: no-repeat;     
+        overflow: hidden;    
         width: 100%;
-        height: 100vh;
+        height: 100vh;    
     }
     * {
         list-style: none;
         outline: none;
         padding: 0;
         margin: 0;
-        font-family: 'Poppins', sans-serif;
+        font-family:Impact;
         box-sizing: border-box;
-    }
+        color:black;
+    } 
     button {
         padding: 20px 50px;
         font-size: 1.5rem;
@@ -43,10 +39,12 @@
     }
     .btn-1:hover {
         color: #fff;
+       
     }
     .btn-1:hover::after {
         transform: scale(1);
         opacity: 1;
+       
     }
     .btn-1::after {
         content: '';
@@ -57,10 +55,11 @@
         top: 0px;
         left: 0px;
         transform: scale(.1);
-        background: #CD5C5C;
+        background: #4682B4;
         z-index: -1;
         opacity: 0;
         transition: all .25s ease;
+      
     }
 
     .btn-2:hover {
@@ -79,13 +78,14 @@
         top: 0px;
         left: 0px;
         transform: scale(.1);
-        background: #CD5C5C;
+        background:#4682B4;
         z-index: -1;
         opacity: 0;
         transition: all .25s ease;
     }
     
 </style>
+
 </head>
 <body>
     <form>
@@ -94,4 +94,5 @@
 
     </form>
 </body>
+
 </html>
