@@ -41,6 +41,7 @@ $conn->query($sql);
         height: 100vh;
     }
     a1{
+        font-family:verdana;
         display: inline-block;
         width: 150px;
         margin-bottom: 10px;
