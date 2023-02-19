@@ -10,7 +10,7 @@
         display: flex;
         align-items: center;
         background: #f5b8e7;
-      	background-image: url(https://media.istockphoto.com/id/839165784/photo/small-piggy-bank-over-blue-background-copy-space.jpg?s=170667a&w=0&k=20&c=ulcY_eI9OIZbO3RIlE0gRJN3mpS-Eiak-SZCrh5RGr4=);        
+      	background-image: url(https://static.vecteezy.com/system/resources/previews/010/518/840/original/digital-finance-and-banking-service-in-futuristic-background-bank-building-with-online-payment-transaction-secure-money-and-financial-innovation-technology-vector.jpg);        
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;     
