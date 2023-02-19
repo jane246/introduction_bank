@@ -11,11 +11,12 @@
                 text-align: center;
                 background-color:white;
             }
+            
         </style>
     </head>
-    <body background=" images.jpg"></body>
 <body>
-    <table width="75%">
+<img src="./images/login1.png" align="right" width="35%" height="35%">
+    <table>
         <?php
             require("connect.php");
             $account_id=$_GET["account_id"];
