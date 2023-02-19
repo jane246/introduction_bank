@@ -4,18 +4,15 @@
 <title>BANK</title>
 <style>
     body {
-        --primary: 25,91,255;
-        --color: 44, 62, 80;
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100vh;
         background: #a4b6d7;
-        height: calc(var(--vh, 1vh) * 100);
         overflow: hidden;
-        color: rgb(var(--color));
         width: 100%;
         height: 100vh;
+        font-size: 200%;
     }
 </style>
 </head>
