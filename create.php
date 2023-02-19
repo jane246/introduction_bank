@@ -1,10 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>BANK</title>
-</head>
+<title>ลงทะเบียน</title>
+<style>
+    body {
+        --primary: 25,91,255;
+        --color: 44, 62, 80;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: #f5b8e7;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: calc(var(--vh, 1vh) * 100);
+        overflow: hidden;
+        color: rgb(var(--color));
+        width: 100%;
+        height: 100vh;
+    }
+</style>
 <body>
-    <a>CREATE</a>
+
 <form action="save_create_people.php" method="post">
     ID Card : <input type="text" name="id_card"><br>
     Titie name : <select name="titlename">
@@ -24,5 +39,3 @@
     Password : <input type="text" name="password"><br>
     <input type="submit" value="CREATE">
 </form>
-</body>
-</html>
