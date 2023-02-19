@@ -3,7 +3,7 @@
 <head>
 <title>BANK</title>
 <style>
-    a {
+    body {
         display: flex;
         align-items: center;
         justify-content: center;
