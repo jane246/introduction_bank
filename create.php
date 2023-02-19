@@ -35,7 +35,7 @@
         <option value="select">select</option>
         <option value="Mr">Mr</option>
         <option value="Mrs">Mrs</option>
-        <option value="Miss">Ms</option>
+        <option value="Miss">Miss</option>
     </select><br>
     <label>Fullname :</label> <input type="text" name="name"placeholder ="ชื่อจริง-สกุลจริง"><br>
     <label>Phon number :</label> <input type="text" name="number" placeholder ="+66"><br>

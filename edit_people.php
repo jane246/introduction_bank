@@ -40,7 +40,7 @@
         <option value="select"<?php if($row["titlename"]=="select") print("selected"); ?>>select</option>
         <option value="Mr"<?php if($row["titlename"]=="Mr") print("selected"); ?>>Mr</option>
         <option value="Mrs"<?php if($row["titlename"]=="Mrs") print("selected"); ?>>Mrs</option>
-        <option value="Miss"<?php if($row["titlename"]=="Ms") print("selected"); ?>>Ms</option>
+        <option value="Miss"<?php if($row["titlename"]=="Miss") print("selected"); ?>>Miss</option>
     </select><br>
     <label>Fullname :</label> <input type="text" name="name" value="<?php print($row["name"]); ?>"><br>
     <label>Phon number :</label> <input type="text" name="number" value="<?php print($row["number"]); ?>"><br>
