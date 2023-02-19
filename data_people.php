@@ -26,20 +26,29 @@
     <form action="deposit.php">
     <input type="hidden" name="account_id" value="<?php print($account_id); ?>">
         Money <input type = "text" name = "deposit"><br>
+        Comment <input type = "text" name = "comment"><br>
         <input type="submit" value="DEPOSIT">
     </form>
+    <br>
 
-    <form action="withdraw.php" method="post">
+    <form action="withdraw.php">
     Money <input type = "text" name = "withdraw"><br>
     <a href="withdrew.php?account_id=<?php echo $account_id; ?>">WITHDRAW</a><br>
     <input type="submit" value="CREATE">
     </form>
+    <br>
 
-    <form action="tranfer.php" method="post">
+    <form action="tranfer.php">
     Money <input type = "text" name = "tranfer"><br>
     <a href="tranfer.php?account_id=<?php echo $account_id; ?>">TRANSFER</a><br>
     </form>
+    <br>
 
-    <a href="stament.php?account_id=<?php echo $account_id; ?>">STATEMENT</a><br>
+    <form action="statement.php?account_id='$account_id'">
+    <!--<input type="hidden" name="account_id" value="<?php print($account_id); ?>">-->
+        <a>STATEMENT</a><br>
+        <input type="submit" value="STATEMENT">
+    </form>
+
 </body>
 </html>
