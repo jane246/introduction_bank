@@ -3,11 +3,7 @@
 <head>
 <title>ลงชื่อเข้าใช้</title>
 <style>
-    body {
-
-        background: #a4b6d7;
-
-    }
+  
     p{
         display: flex;
         align-items: center;
