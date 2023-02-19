@@ -11,7 +11,7 @@
         background:#a4b6d7;
         height: calc(var(--vh, 1vh) * 100);
         overflow: hidden;
-        width: 100%;      
+        width: 90%;      
     }
     label{
         display: inline-block;
@@ -19,6 +19,7 @@
         margin-bottom: 10px;
         font-family:verdana;
         color: #000033;
+
     }
     p{
     	display: flex;
@@ -28,7 +29,7 @@
 </style>
 </head>
 <body>
-
+<img src="./images/12.png" align-items="left" width="35%" height="85%">
 <form action="save_create_people.php" method="post">
     <label>ID Card :</label> <input type="text" name="id_card" placeholder ="เลขบัตรประจำตัวประชาชน"><br>
     <label>Titie name :</label> <select name="titlename">
