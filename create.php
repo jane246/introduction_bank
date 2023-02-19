@@ -1,3 +1,4 @@
+
 <form action="save_create_people.php" method="post">
     ID Card : <input type="text" name="id_card"><br>
     Titie name : <select name="titlename">
