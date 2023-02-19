@@ -13,7 +13,7 @@
         {
         $sql = "SELECT ALL * FROM statement WHERE account_id='$account_id'";
         //echo $row['time','deposit','withdraw','comment'];
-        echo $row['time']."&nbsp;5".$row['deposit']."<br>";   
+        echo $row['time']." ".$row['deposit']." ".$row['withdraw']." ".$row['comment']."<br>";   
         }    
 ?>  
 
