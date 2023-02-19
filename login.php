@@ -34,7 +34,7 @@
         <a href="forget.php">FORGET</a>
         <a href="create.php?">CREATE</a>  
         <br>
-        <input type = "submit" value = "Login">
+        <p><input type = "submit" value = "Login"></p>
                     
     </form> 
 </body>
