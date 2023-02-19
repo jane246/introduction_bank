@@ -15,7 +15,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 180%;
     }
     label{
         display: inline-block;
@@ -35,7 +34,7 @@
         <a href="forget.php">FORGET</a>
         <a href="create.php?">CREATE</a>  
         <br>
-        <p><input type = "submit" value = "Login"></p>
+        <p><input type = "submit" value = "Login" stlye = font-size: 200%;></p>
                     
     </form> 
 </body>
