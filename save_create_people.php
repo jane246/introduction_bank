@@ -32,8 +32,7 @@ $conn->query($sql);
     }
     a1{
         font-family:verdana;
-        display: inline-block;
-        margin-bottom: 10px;
+        display: flex;
         font-size: 300%;
     }
 </style>
