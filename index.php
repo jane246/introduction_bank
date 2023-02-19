@@ -90,9 +90,9 @@
     }
 </style>
 </head>
-<a>WELCOME TO THE BANK</a>
 <body>
     <form>
+        <a>WELCOME TO THE BANK</a>
         <Button class="btn-1"><a href="create.php">CREATE</a></Button>
         <Button class="btn-2"><a href="login.php">LOGIN</a></Button>
 
