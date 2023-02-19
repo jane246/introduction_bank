@@ -34,7 +34,7 @@
         <a href="forget.php">FORGET</a>
         <a href="create.php?">CREATE</a>  
         <br>
-        <p><input type = "submit" value = "Login" stlye = font-size: 200%;></p>
+        <p><input type = "submit" value = "Login"></p>
                     
     </form> 
 </body>
