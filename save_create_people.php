@@ -33,7 +33,6 @@ $conn->query($sql);
     a1{
         font-family:verdana;
         display: inline-block;
-        width: 150px;
         margin-bottom: 10px;
         font-size: 300%;
     }
