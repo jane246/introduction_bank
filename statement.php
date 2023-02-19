@@ -10,6 +10,7 @@
                 border-collapse: collapse;
                 padding: 20px;
             }
+
         </style>
     </head>
 <body>
