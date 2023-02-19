@@ -20,6 +20,9 @@
         align-items: center;
         justify-content: center;
     }
+    a{
+        font-size: 150%;
+    }
 </style>
 </head>
 <body>
