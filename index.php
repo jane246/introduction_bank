@@ -15,7 +15,7 @@
         background-size: cover;
         background-repeat: no-repeat;     
         overflow: hidden;    
-        width: 10%;
+        width: 50%;
         height: 100vh;    
     }
     * {
