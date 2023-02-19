@@ -32,11 +32,11 @@
     Phon number : <input type="text" name="number" placeholder ="+66"><br>
     Email : <input type="text" name="email" placeholder ="example@mail.com"><br>
     Birthday : <input type="date" name="birthday"><br>
-    Age : <input type="text" name="age"><br>
-    Account name : <input type="text" name="account_name"><br>
+    Age : <input type="text" name="age"placeholder ="อายุ"><br>
+    Account name : <input type="text" name="account_name"placeholder ="ชื่อบัญชี"> <br>
     Money : <input type="text" name="money" placeholder ="เงินฝากเริ่มต้น"><br>
     Address : <input type="text" name="address" placeholder ="Bangkok Thailand"><br>
-    Password : <input type="text" name="password"><br>
+    Password : <input type="text" name="password" placeholder ="รหัสผ่าน"><br>
     <input type="submit" value="CREATE">
 </form>
 </body>
