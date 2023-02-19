@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 19, 2023 at 03:06 AM
+-- Generation Time: Feb 19, 2023 at 12:42 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.0.19
 
@@ -47,12 +47,36 @@ CREATE TABLE `bank` (
 --
 
 INSERT INTO `bank` (`account_id`, `id_card`, `titlename`, `name`, `number`, `email`, `birthday`, `age`, `account_name`, `money`, `address`, `password`) VALUES
-(2, '4569872615', 'Mr', 'ppppp ooooo', '0000000000', 'lokppo', '2023-02-01', 18, 'ppp', 10000000, 'kronglongka', '444555'),
-(3, '777777', 'Mr', 'somjit joey', '0929999', 'somjit@email.com', '2023-02-01', 12, 'll', 5000, 'kronglongka', '000000000'),
-(4, '77444', 'Mr', 'joey', '0929555', 'somjit@email.com', '2023-02-01', 12, 'oo', 5000, 'kronglongka', '000000111'),
-(5, '755556666', 'Ms', 'joy', '0929555', 'jit@email.com', '2023-02-01', 12, 'uu', 5000, 'kronglongka', '66660111'),
-(1000, '7578956', 'Ms', 'jane', '0924456', 'jane@email.com', '2023-02-02', 20, 'y', 10000, 'kronglongka', '64568'),
-(1001, '748621', 'Ms', 'j', '094856', 'j@email.com', '2023-01-10', 18, 'k', 10500, 'kronglongka', '61562');
+(1256987448, '777777', 'Mr', 'j', '7777777777', 'j@email.com', '0000-00-00', 18, 'j', 500, 'kronglongka', '000000000');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `statement`
+--
+
+CREATE TABLE `statement` (
+  `deposit` int(20) NOT NULL,
+  `withdraw` int(20) NOT NULL,
+  `comment` varchar(50) NOT NULL,
+  `time` datetime(6) NOT NULL,
+  `account_id` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `statement`
+--
+
+INSERT INTO `statement` (`deposit`, `withdraw`, `comment`, `time`, `account_id`) VALUES
+(0, 0, '0', '0000-00-00 00:00:00.000000', 0),
+(1000, 0, '0', '0000-00-00 00:00:00.000000', 0),
+(1000, 0, '0', '0000-00-00 00:00:00.000000', 1256987448),
+(4000, 0, '0', '0000-00-00 00:00:00.000000', 1256987448),
+(1000, 0, '0', '0000-00-00 00:00:00.000000', 1256987448),
+(107, 0, '0', '0000-00-00 00:00:00.000000', 1256987448),
+(107, 0, '0', '0000-00-00 00:00:00.000000', 1256987448),
+(107, 0, 'นนน', '0000-00-00 00:00:00.000000', 1256987448),
+(1000, 0, 'ppp', '2023-02-19 17:38:59.000000', 1256987448);
 
 --
 -- Indexes for dumped tables
@@ -72,7 +96,7 @@ ALTER TABLE `bank`
 -- AUTO_INCREMENT for table `bank`
 --
 ALTER TABLE `bank`
-  MODIFY `account_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1256987446;
+  MODIFY `account_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1256987456;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
