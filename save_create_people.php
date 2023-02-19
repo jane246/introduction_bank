@@ -32,15 +32,18 @@ $conn->query($sql);
     }
     a1{
         font-family:verdana;
-        display: flex;
         font-size: 300%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     	height: 100vh;
     }
 </style>
 </head>
 <body>
     <form>
         <br>
-        <a1>Account created successfully</a1>
+        <a1><b>Account created successfully</b></a1>
         <br>  
         <a href="login.php">Back to the login page</a>             
     </form>  
