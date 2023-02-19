@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<body>
-    
+<body>    
     <?php
     require("connect.php");
     $account_id=$_GET["account_id"];
