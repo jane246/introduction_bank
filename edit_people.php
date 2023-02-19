@@ -42,7 +42,7 @@
         <option value="Mrs"<?php if($row["titlename"]=="Mrs") print("selected"); ?>>Mrs</option>
         <option value="Ms"<?php if($row["titlename"]=="Ms") print("selected"); ?>>Ms</option>
     </select><br>
-    <label>First name - Last name :</label> <input type="text" name="name" value="<?php print($row["name"]); ?>"><br>
+    <label>Fullname :</label> <input type="text" name="name" value="<?php print($row["name"]); ?>"><br>
     <label>Phon number :</label> <input type="text" name="number" value="<?php print($row["number"]); ?>"><br>
     <label>Email :</label> <input type="text" name="email" value="<?php print($row["email"]); ?>"><br>
     <label>Age :</label> <input type="text" name="age" value="<?php print($row["age"]); ?>"><br>
