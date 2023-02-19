@@ -31,12 +31,19 @@ $conn->query($sql);
         
     }
     a1{
-        font-family:verdana;
+        font-family:Impact;
         font-size: 300%;
         display: flex;
         align-items: center;
         justify-content: center;
      	height: 100vh;
+        color:black;
+    }
+    a{
+    	display: flex;
+        align-items: center;
+        justify-content: center;
+        color:black;
     }
 </style>
 </head>
