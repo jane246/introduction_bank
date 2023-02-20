@@ -11,7 +11,7 @@
     $sql = "SELECT * FROM bank WHERE password='$password' AND account_name='$account_name'";
     $result = $conn->query($sql);
     $conn->close();
-
+//แก้ไข
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     $account_id=$row["account_id"];
