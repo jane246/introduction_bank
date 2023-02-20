@@ -18,6 +18,7 @@ $password=$_POST["password"];
 $sql="INSERT INTO bank(id_card,titlename,name,number,email,birthday,age,account_name,money,address,password)";
 $sql.=" VALUES('$id_card','$titlename','$name','$number','$email','$birthday','$age','$account_name','$money','$address','$password')";
 $conn->query($sql);
+$conn->close();
 //echo $sql;
 //header( "location: data_people.php" );
 ?>

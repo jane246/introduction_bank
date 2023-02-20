@@ -23,6 +23,7 @@
            
             $sql = "SELECT * FROM statement WHERE account_id='$account_id'";    
             $result = $conn->query($sql);
+            $conn->close();
             if ($result->num_rows > 0)
                 echo "<tr> <th>Time</th> <th>Deposit</th> <th>Withdraw</th> <th>Comment</th> </tr>";
                 while($row = $result->fetch_assoc())

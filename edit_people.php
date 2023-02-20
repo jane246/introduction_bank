@@ -25,7 +25,7 @@
     }
 </style>
 <body>
-<img src="..jpg" align="right" width="30%" height="60%">
+<img src="./images/pngfind.com-technology-png-446958.png" align="right" width="30%" height="60%">
 <?php
     require("connect.php");
     $account_id=$_GET["account_id"];

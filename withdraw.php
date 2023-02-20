@@ -23,6 +23,7 @@
 
         $sql = "UPDATE bank SET money = '{$with}' WHERE account_id = '{$account_id}'";
         $conn->query($sql);
+        $conn->close();
         header( "location: data_people.php?account_id=$account_id" );
 ?>  
 
