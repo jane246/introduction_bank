@@ -39,8 +39,23 @@
     <label>Fullname :</label> <input type="text" name="name"placeholder ="ชื่อจริง-สกุลจริง" required><br>
     <label>Phon number :</label> <input type="text" name="number" placeholder ="+66" required><br>
     <label>Email :</label> <input type="text" name="email" placeholder ="example@mail.com" required><br>
-    <label>Birthday :</label> <input type="date" name="birthday" required><br>
+
+    <!--<label>Birthday :</label> <input type="date" name="birthday" required><br>    
     <label>Age :</label> <input type="text" name="age"placeholder ="อายุ" required><br>
+-->
+    <label>Birthday :</label> <input type="date" id="birthday" name="birthday" required onkeydown="{getAge(this.value)};">ENTER
+
+<script>
+function getAge(dateString) {
+var today = new Date();
+var birthday = new Date(dateString);
+var age = today.getFullYear() - birthday.getFullYear();
+var m = today.getMonth() - birthday.getMonth();
+if (m < 0 || (m == 0 && today.getDate() < birthday.getDate())) {age--;}
+if(age !=""){document.getElementById('age').value = age;}}
+</script>
+<label readonly="readonly"></label> <br>
+    <label>Age :</label> <input type="text" id="age" name="age" required><br>
     <label>Account name :</label> <input type="text" name="account_name"placeholder ="ชื่อบัญชี" required> <br>
     <label>Money :</label> <input type="text" name="money" placeholder ="เงินฝากเริ่มต้น" required><br>
     <label>Address :</label> <input type="text" name="address" placeholder ="Bangkok Thailand" required><br>
