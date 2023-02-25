@@ -1,3 +1,23 @@
+<?php
+require("connect.php");
+
+if(isset($_GET["keyword"])){
+    $keyword=$_GET["keyword"];
+}else{
+    $keyword="";
+}
+
+if($keyword!=""){
+    $sql = "SELECT account_id,deposit,withdraw,time,comment FROM statement WHERE LIKE '%$keyword%'";
+}else{
+    $sql = "SELECT account_id,deposit,withdraw,time,comment FROM atatement";
+}
+?>
+<form action="statement.php" method="get">
+    Search:<input type="text" name="keyword" value="<?php print($keyword);?>">
+    <input type="submit" value="Search">
+</form><br>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -35,14 +55,6 @@
                 }    
         ?>  
     </table>
-
-    <table style="width:100%">
-        <tr>
-            <th>Person 1</th>
-            <th>Person 2</th>
-            <th>Person 3</th>
-        </tr>
-</table>
     <br>
     <a href="data_people.php?account_id=<?php echo $account_id; ?>"><font color="#FFFFFF" size="5px">Back</font></a><br>
 </form>
