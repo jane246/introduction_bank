@@ -45,16 +45,17 @@
 -->
     <label>Birthday :</label> <input type="date" id="birthday" name="birthday" required onkeydown="{getAge(this.value)};">ENTER
 
-<script>
-function getAge(dateString) {
-var today = new Date();
-var birthday = new Date(dateString);
-var age = today.getFullYear() - birthday.getFullYear();
-var m = today.getMonth() - birthday.getMonth();
-if (m < 0 || (m == 0 && today.getDate() < birthday.getDate())) {age--;}
-if(age !=""){document.getElementById('age').value = age;}}
-</script>
-<label readonly="readonly"></label> <br>
+        <script>
+            function getAge(dateString) {
+            var today = new Date();
+            var birthday = new Date(dateString);
+            var age = today.getFullYear() - birthday.getFullYear();
+            var m = today.getMonth() - birthday.getMonth();
+            if (m < 0 || (m == 0 && today.getDate() < birthday.getDate())) {age--;}
+            if(age !=""){document.getElementById('age').value = age;}}
+        </script>
+    <label readonly="readonly"></label> <br>
+
     <label>Age :</label> <input type="text" id="age" name="age" required><br>
     <label>Account name :</label> <input type="text" name="account_name"placeholder ="ชื่อบัญชี" required> <br>
     <label>Money :</label> <input type="text" name="money" placeholder ="เงินฝากเริ่มต้น" required><br>

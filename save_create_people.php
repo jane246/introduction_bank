@@ -15,10 +15,32 @@ $password=$_POST["password"];
 //echo "fname:$fname lname:$lname age:$age sex:$sex marry_status:$marry_status";
 //echo "IDcard:$id_card tname:$titlename flname:$name pnumber:$number email:$email birthday:$birthday age:$age username:$account_name mmoney:$money aaddress:$address ppassword:$password";
 //$sql="INSERT INTO bankdb(IDcard,tname,flname,pnumber,email,birthday,age,username,mmoney,aaddress,ppassword)";
-$sql="INSERT INTO bank(id_card,titlename,name,number,email,birthday,age,account_name,money,address,password)";
+
+$sql = "SELECT All * FROM bank WHERE (email='$email') OR (account_name='$account_name')";
+$result = $conn->query($sql);
+    
+if ($result->num_rows > 0){
+    $row = $result->fetch_assoc();
+    if($row['email']==$email && $row['account_name']==$account_name){
+        header( "location: create.php" );
+    }
+    else if($row['email']==$email){
+        header( "location: create.php" );
+    }
+    else if($row['account_name']==$account_name){
+        header( "location: create.php" );
+    }
+}
+else{
+    $sql="INSERT INTO bank(id_card,titlename,name,number,email,birthday,age,account_name,money,address,password)";
+    $sql.=" VALUES('$id_card','$titlename','$name','$number','$email','$birthday','$age','$account_name','$money','$address','$password')";
+    $conn->query($sql);
+    $conn->close();
+}
+/*$sql="INSERT INTO bank(id_card,titlename,name,number,email,birthday,age,account_name,money,address,password)";
 $sql.=" VALUES('$id_card','$titlename','$name','$number','$email','$birthday','$age','$account_name','$money','$address','$password')";
 $conn->query($sql);
-$conn->close();
+$conn->close();*/
 //echo $sql;
 //header( "location: data_people.php" );
 ?>
