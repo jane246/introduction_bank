@@ -57,8 +57,9 @@
     </h3>
     <a href="edit_people.php?account_id=<?php echo $account_id; ?>">Edit</a>
     <a>,</a>
-    <a href="delete_people.php?account_id=<?php echo $account_id; ?>">Delete</a><br>
+    <a href="delete_people.php?account_id=<?php echo $account_id; ?>" onclick="return confirm('Are you sure to delete?')">Delete</a>
     <br>
+    
     <h>BANK</h><br>
 <p1>
     <form action="deposit.php">
