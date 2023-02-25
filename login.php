@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,11 +27,34 @@
     </style>
 </head>
 <body>
-    <form action="checklogin.php" method="post">
+    <form action="login.php" method="post">
+    <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    require("connect.php");
+    $account_name=$_POST["account_name"];
+    $password=$_POST["password"];
+    $account_id="";
+    //echo $account_name.$password;
+    $sql = "SELECT * FROM bank WHERE password='$password' AND account_name='$account_name'";
+    $result = $conn->query($sql);
+    $conn->close();
+//แก้ไข
+if ($result->num_rows > 0) {
+  while($row = $result->fetch_assoc()) {
+    $account_id=$row["account_id"];
+    header( "location: data_people.php?account_id=$account_id");
+  }
+} else {
+        echo "Password or Username does not match";
+        echo "<br>";
+        echo "Please do it again";
+}
+}
+?>
         <p><img src="./images/login1.png" width="300px" height="300px"></p><br>
         <br>
-        <label>Username :</label> <input type = "text" name = "account_name" placeholder ="ชื่อบัญชี"> <br>
-        <label>Password :</label> <input type = "text" name = "password"placeholder ="รหัสผ่าน"><br>
+        <label>Username :</label> <input type = "text" name = "account_name" placeholder ="ชื่อบัญชี" required> <br>
+        <label>Password :</label> <input type = "text" name = "password"placeholder ="รหัสผ่าน" required><br>
         <br>  
         <a href="forget.php">FORGET</a>
         <a href="create.php?">CREATE</a>  
