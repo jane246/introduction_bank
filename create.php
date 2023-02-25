@@ -32,12 +32,6 @@
 <img src="./images/12.png" align-items="left" width="35%" height="85%">
 <form action="save_create_people.php" method="post">
     <label>ID Card :</label> <input type="text" name="id_card" placeholder ="เลขบัตรประจำตัวประชาชน" required><br>
-    <!--<label>Titie name :</label> <select name="titlename" required>
-        <option value="" required>select</option>
-        <option value="Mr" required>Mr</option>
-        <option value="Mrs" required>Mrs</option>
-        <option value="Miss" required>Miss</option>
-    </select><br>-->
     <label>Titie name :</label>
     <input type="radio" name="titlename" value="Mr" required>Mr</input>
     <input type="radio" name="titlename" value="Mrs" required>Mrs</input>
