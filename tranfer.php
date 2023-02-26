@@ -97,6 +97,7 @@
     <form action="tranfer.php?account_id=<?php if (isset($account_id)) {echo $account_id;} ?>&person=<?php if (isset($to_account_id)) {echo $to_account_id;} ?>&M=<?php if (isset($M)) {echo $M;} ?>&comment=<?php if (isset($comment)) {echo $comment;} ?>&" method="post">     
              <!--<center><p>Account ID :<?php if (isset($to_account_id)) {echo $to_account_id;} ?>"</p></center>-->
             <h1><input type="submit" value="OK" style="background-color:#003366; color:white; font-size:30px; border-radius:5px; font-family:verdana;"></h1>
+        <hr>
         </form>
     <a href="data_people.php?account_id=<?php if (isset($account_id)) {echo $account_id;} ?>">CANCEL</a> 
 
