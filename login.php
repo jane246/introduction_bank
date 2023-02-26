@@ -12,6 +12,10 @@
         height: 100vh;
         background: #a4b6d7;
         overflow: hidden;
+        background-image: url();
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; 
     }
     p{
         display: flex;
