@@ -10,6 +10,7 @@
         height: 100vh;
         background: #a4b6d7;
         overflow: hidden;
+        /*background-image:"bg1.jpg";*/
     }
     a1{
         font-family:Impact;
