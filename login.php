@@ -37,6 +37,28 @@
         font-size: 130%;
 
     }
+    .btn{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+.btn:hover{
+	background-position: right;
+}
+
+
     </style>
 </head>
 <body>
@@ -69,13 +91,15 @@ if ($result->num_rows > 0) {
 ?>
 </a1>
         <p><img src="./images/login.png" width="250px" height="200px"></p><br>
-        <label>Username :</label> <input type = "text" name = "account_name" placeholder ="ชื่อบัญชี" required> <br>
-        <label>Password :</label> <input type = "text" name = "password"placeholder ="รหัสผ่าน" required><br>
+        <label>Username :</label> 
+            <input class="input" type = "text" name = "account_name" placeholder ="ชื่อบัญชี" required><br>
+        <label>Password :</label> 
+            <input class="input" type = "text" name = "password"placeholder ="รหัสผ่าน" required><br>
          
         <a href="forget.php">FORGET</a><br>
         <a>Don't have an account?  </a><a href="create.php?">CREATE</a>  
         <br>
-        <p><input type = "submit" value = "Login" style = "background-color:#76D7C4; color:black; font-size:30px; border-radius:5px;"></p>
+        <p><input type = "submit" value = "Login" class="btn"></p>
                     
     </form> 
     </div>

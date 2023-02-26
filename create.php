@@ -34,6 +34,7 @@
     .container0 {
         max-width:1110px;
         margin:0 auto;
+        align-items: center;
     }
     nav{
         height: 60px;
@@ -45,7 +46,7 @@
     b{
         font-family:verdana;
         color: #000033;
-        font-size: 200%;
+        font-size: 180%;
     }
     cc{
         color:#C0392B;
@@ -159,7 +160,7 @@ $conn->close();*/
     <label>Money :</label> <input type="text" name="money" placeholder ="เงินฝากเริ่มต้น" required value = "<?php if (isset($money)){ echo $money;} ?>"><br>
     <label>Address :</label> <input type="text" name="address" placeholder ="Bangkok Thailand" required value = "<?php if (isset($address)){ echo $address;} ?>"><br>
     <label>Password :</label> <input type="text" name="password" placeholder ="รหัสผ่าน" required value = "<?php if (isset($password)){ echo $password;} ?>"><br>
-    <p><input type="submit" value="CREATE" style="background-color:#003366; color:white; font-size:15px; border-radius:5px; font-family:verdana;"></p>
+    <p><input type="submit" value="   CREATE   " style="background-color:#003366; color:white; font-size:3ex; border-radius:5px; font-family:verdana;"></p>
 </div>
 </header>
 </form>
