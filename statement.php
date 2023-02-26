@@ -66,7 +66,7 @@
     <div class="table-container">
     <div class="search-container">
         <form action="statement.php?account_id=<?php echo $account_id ?>" method="post">
-            Search:<input type="text" name="keyword">
+            Search:<input type="text" name="keyword" style = color:white;>
             <input type="submit" value="Search">
             <input type="hidden" name="account_id" value="<?php echo $account_id ?>">
         </form>
