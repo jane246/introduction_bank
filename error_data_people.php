@@ -19,21 +19,24 @@
         justify-content: center;
     }
     a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 150%;
+        
     }
 </style>
 <body> 
 
     <form>
-        <p><img src="./images/error.png" width="310px" height="310px"></p><br>
-        <br>
+        <p><img src="./images/16.png" width="310px" height="310px"></p><br>
         <a1>Please check the transaction</a1>
         <br> 
         <?php
         require("connect.php");
         $account_id=$_GET["account_id"];
         ?>
-        <a href="data_people.php?account_id=<?php echo $account_id; ?>">Back</a>           
+        <a href="data_people.php?account_id=<?php echo $account_id; ?>">Back to check</a>           
     </form>  
 
 </form>

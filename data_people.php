@@ -51,6 +51,7 @@
 <body>
     <h>INFORMATION</h>
     <h3>
+    <img src="./images/17.png" width="80px" height="80px">
         <?php
         require("connect.php");
         $account_id = $_GET["account_id"];
