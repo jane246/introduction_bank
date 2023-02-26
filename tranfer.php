@@ -23,6 +23,7 @@
         align-items: center;
         justify-content: center;
         font-size: 50%;
+        color: #000;
     }
 </style>
 <body>
@@ -73,8 +74,8 @@
     }
 }
     ?>   
-    <a1>
-    <center><img src="./images/20.png" width="45%" height="70%"></center> 
+    <center><a1>
+    <center><img src="./images/20.png" width="45%" height="70%"> </center>
     <?php
     require("connect.php");
     $account_id = $_GET["account_id"];
@@ -98,7 +99,6 @@
         <h1><input type="submit" value="OK" style="background-color:#003366; color:white; font-size:30px; border-radius:5px; font-family:verdana;"></h1>
         <a href="data_people.php?account_id=<?php if (isset($account_id)) {echo $account_id;} ?>">CANCEL</a>  
       </form> 
-    </a1>
+    </a1></center>
 </body>
-
 </html>
