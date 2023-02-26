@@ -74,7 +74,7 @@
         <table>
             <?php
             require("connect.php");
-            $sql = "SELECT * FROM statement WHERE account_id='$account_id'";
+            $sql = "SELECT * FROM statement WHERE account_id='$account_id' ORDER BY time DESC";
             if ($_SERVER["REQUEST_METHOD"] == "POST"){
                 $account_id = $_POST["account_id"];
                 $keyword=$_POST["keyword"];
@@ -84,9 +84,9 @@
                     $keyword="";
                 }
                 if(!empty($keyword)){
-                    $sql = "SELECT ALL * FROM statement WHERE account_id='$account_id'AND ( time LIKE '%$keyword%' OR deposit LIKE '%$keyword%' OR withdraw LIKE '%$keyword%' OR comment LIKE '%$keyword%')";
+                    $sql = "SELECT ALL * FROM statement WHERE account_id='$account_id'AND ( time LIKE '%$keyword%' OR deposit LIKE '%$keyword%' OR withdraw LIKE '%$keyword%' OR comment LIKE '%$keyword%') ORDER BY time DESC";
                 }else{
-                    $sql = "SELECT * FROM statement WHERE account_id='$account_id'";
+                    $sql = "SELECT * FROM statement WHERE account_id='$account_id' ORDER BY time DESC";
                 }
             }
             $result = $conn->query($sql);
