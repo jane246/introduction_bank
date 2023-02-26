@@ -38,10 +38,13 @@
 </head>
 <body>
     <h>INFORMATION</h>
-    <h3>    
-    <?php
-    require("connect.php");
-    $account_id=$_GET["account_id"];
+    <h3>
+        <?php
+        require("connect.php");
+        $account_id = $_GET["account_id"];
+        if (isset($_POST['account_id'])) {
+            $account_id = $_POST['account_id'];
+        }
 
     $sql = "SELECT * FROM bank WHERE account_id='$account_id'";
     $result = $conn->query($sql);

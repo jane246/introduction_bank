@@ -46,7 +46,7 @@
 </style>
 </head>
 <body>
-<img src="./images/12.png" align-items="left" width="30%" height="75%">
+<img src="./images/13.png" width="30%" height="70%">
 
 <header>
     <div class="container0">
@@ -132,7 +132,7 @@ $conn->close();*/
     <!--<label>Birthday :</label> <input type="date" name="birthday" required><br>    
     <label>Age :</label> <input type="text" name="age"placeholder ="อายุ" required><br>
 -->
-    <label>Birthday :</label> <input type="date" id="birthday" name="birthday" required onkeydown="{getAge(this.value)};" value = "<?php if (isset($birthday)){ echo $birthday;} ?>">ENTER
+    <label>Birthday :</label> <input type="date" id="birthday" name="birthday" required onkeydown="{getAge(this.value)};" value = "<?php if (isset($birthday)){ echo $birthday;} ?>">Enter
 
         <script>
             function getAge(dateString) {

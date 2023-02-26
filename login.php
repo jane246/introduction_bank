@@ -51,11 +51,10 @@ if ($result->num_rows > 0) {
 }
 }
 ?>
-        <p><img src="./images/login1.png" width="300px" height="300px"></p><br>
-        <br>
+        <p><img src="./images/login.png" width="250px" height="200px"></p><br>
         <label>Username :</label> <input type = "text" name = "account_name" placeholder ="ชื่อบัญชี" required> <br>
         <label>Password :</label> <input type = "text" name = "password"placeholder ="รหัสผ่าน" required><br>
-        <br>  
+         
         <a href="forget.php">FORGET</a>
         <a href="create.php?">CREATE</a>  
         <br>

@@ -3,18 +3,22 @@
 <head>
 <title>BANK</title>
 <style>
-    body {
+     body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
         background: #a4b6d7;
-        
+        overflow: hidden;
     }
     a1{
         font-family:Impact;
         font-size: 300%;
+    }
+    p{
         display: flex;
         align-items: center;
         justify-content: center;
-     	height: 85vh;
-        color:black;
     }
     a{
     	display: flex;
@@ -28,7 +32,7 @@
 </head>
 <body>
     <form>
-        <br>
+        <p><img src="./images/15.png" width="310px" height="310px"></p>
         <a1><b>Account created successfully</b></a1>
         <br>  
         <a href="login.php"><i>Back to the login page</i></a>             

@@ -10,6 +10,7 @@
         height: 100vh;
         background: #a4b6d7;
         overflow: hidden;
+        /*background-image:"bg1.jpg";*/
     }
     a1{
         font-family:Impact;
@@ -27,8 +28,7 @@
 </head>
 <body>
     <form>
-        <p><img src="./images/forget1.png" width="300px" height="300px"></p><br>
-        <br>
+        <p><img src="./images/14.png" width="300px" height="300px"></p>
         <a1>Please contact the bank.</a1>
         <br>
         <a1>Tel. 08X-XXX-XXXX</a1>
