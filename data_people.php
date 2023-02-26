@@ -81,7 +81,7 @@
             <input type="hidden" name="account_id" value="<?php print($account_id); ?>">
             <label>Money</label> <input type="text" name="deposit" placeholder="ฝากเงิน"><br>
             <label>Comment</label> <input type="text" name="comment"><br>
-            <h1><input type="submit" value="DEPOSIT" style="background-color:#003366; color:white; font-size:13px; border-radius:5px; font-family:verdana;"></h1>
+            <h1><input type="submit" value="DEPOSIT" onclick="return confirm('Are you sure to deposit?')" style="background-color:#003366; color:white; font-size:13px; border-radius:5px; font-family:verdana;"></h1>
         </form>
         <br>
     </p1>
@@ -90,7 +90,7 @@
             <input type="hidden" name="account_id" value="<?php print($account_id); ?>">
             <label>Money</label> <input type="text" name="withdraw" placeholder="ถอนเงิน"><br>
             <label>Comment</label> <input type="text" name="comment"><br>
-            <h1><input type="submit" value="WITHDRAW" style="background-color:#003366; color:white; font-size:13px; border-radius:5px; font-family:verdana;"></h1>
+            <h1><input type="submit" value="WITHDRAW" onclick="return confirm('Are you sure to  withdraw?')" style="background-color:#003366; color:white; font-size:13px; border-radius:5px; font-family:verdana;"></h1>
         </form>
         <br>
     </p2>
@@ -155,7 +155,7 @@
             <label>Person</label> <input type="text" name="person" placeholder="เลขบัญชีผู้รับ"><br>
             <label>Money</label> <input type="text" name="M" placeholder="โอนเงิน"><br>
             <label>Comment</label> <input type="text" name="comment"><br>         
-            <h1><input type="submit" value="TRANFER"  onclick="return confirm('Are you sure to tranfer ?')" style="background-color:#003366; color:white; font-size:13px; border-radius:5px; font-family:verdana;"></h1>
+            <h1><input type="submit" value="TRANFER" onclick="return confirm('Are you sure to tranfer?')" style="background-color:#003366; color:white; font-size:13px; border-radius:5px; font-family:verdana;"></h1>
             <hr>
         </form>
     </p3>
