@@ -9,7 +9,7 @@
         background: #a4b6d7;
         overflow: hidden;
     }
-    p{
+    a1{
         font-family:Impact;
         font-size: 300%;
     }
@@ -22,7 +22,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 150%;
+        font-size: 50%;
     }
 </style>
 <body>
@@ -72,7 +72,9 @@
         header("location: error_data_people.php?account_id=$account_id");
     }
 }
-    ?>
+    ?>   
+    <a1>
+    <center><img src="./images/20.png" width="45%" height="70%"></center> 
     <?php
     require("connect.php");
     $account_id = $_GET["account_id"];
@@ -84,16 +86,19 @@
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
+        echo "Confirm money transfer to ".$row['account_name'];
+    }
+    else
+    {
+        echo "Can't find";
     }
     ?>
-    <form action="tranfer.php?account_id=<?php if (isset($account_id)) {echo $account_id;} ?>&person=<?php if (isset($to_account_id)) {echo $to_account_id;} ?>&M=<?php if (isset($M)) {echo $M;} ?>&comment=<?php if (isset($comment)) {echo $comment;} ?>&" method="post">
-            <center><img src="./images/20.png" width="45%" height="70%"></center>    
-            <p>Tranfer to account ID : <?php if (isset($to_account_id)) {echo $to_account_id;} ?></p>
-            <h1><input type="submit" value="OK" style="background-color:#003366; color:white; font-size:30px; border-radius:5px; font-family:verdana;"></h1>
-            <a href="data_people.php?account_id=<?php if (isset($account_id)) {echo $account_id;} ?>">CANCEL</a> 
-        </form>
-   
-
+     <form action="tranfer.php?account_id=<?php if (isset($account_id)) {echo $account_id;} ?>&person=<?php if (isset($to_account_id)) {echo $to_account_id;} ?>&M=<?php if (isset($M)) {echo $M;} ?>&comment=<?php if (isset($comment)) {echo $comment;} ?>&" method="post">     
+        <center><p>Account ID : <?php if (isset($to_account_id)) {echo $to_account_id;} ?></p></center>
+        <h1><input type="submit" value="OK" style="background-color:#003366; color:white; font-size:30px; border-radius:5px; font-family:verdana;"></h1>
+        <a href="data_people.php?account_id=<?php if (isset($account_id)) {echo $account_id;} ?>">CANCEL</a>  
+      </form> 
+    </a1>
 </body>
 
 </html>
