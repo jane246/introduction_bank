@@ -58,6 +58,29 @@
 	background-position: right;
 }
 
+.input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0 0 0 45px;
+    background: rgba(255,255,255,0.1);
+}    
+.input-field{
+    display: flex;
+    flex-direction: column;
+}
+i{
+    position: relative;
+    top: -33px;
+    left: 17px;
+    color: #fff;
+}
+::-webkit-input-placeholder{
+    color: #fff;
+}
 
     </style>
 </head>
@@ -90,12 +113,21 @@ if ($result->num_rows > 0) {
 }
 ?>
 </a1>
-        <p><img src="./images/login.png" width="250px" height="200px"></p><br>
-        <label>Username :</label> 
-            <input class="input" type = "text" name = "account_name" placeholder ="ชื่อบัญชี" required><br>
-        <label>Password :</label> 
-            <input class="input" type = "text" name = "password"placeholder ="รหัสผ่าน" required><br>
-         
+        <p><img src="./images/login.png" width="250px" height="200px"></p>
+        <!--<label>Username :</label> -->
+        <div class="input-field">
+            <input class="input" type = "text" name = "account_name" placeholder ="Username(ชื่อบัญชี)" required>
+            <i>
+                <ion-icon name="person-outline"></ion-icon>
+            </i>
+        </div>
+        <!--<label>Password :</label> -->
+        <div class="input-field">
+            <input class="input" type = "text" name = "password"placeholder ="Password(รหัสผ่าน)" required>            
+            <i>
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </i>
+        </div>
         <a href="forget.php">FORGET</a><br>
         <a>Don't have an account?  </a><a href="create.php?">CREATE</a>  
         <br>
@@ -103,5 +135,7 @@ if ($result->num_rows > 0) {
                     
     </form> 
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
