@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html>
-
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: #a4b6d7;
+        overflow: hidden;
+    }
+    a1{
+        font-family:Impact;
+        font-size: 300%;
+    }
+    h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50%;
+        color: #000;
+    }
+</style>
 <body>
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -48,7 +73,9 @@
         header("location: error_data_people.php?account_id=$account_id");
     }
 }
-    ?>
+    ?>   
+    <center><a1>
+    <center><img src="./images/20.png" width="45%" height="80%"> </center>
     <?php
     require("connect.php");
     $account_id = $_GET["account_id"];
@@ -69,11 +96,10 @@
     ?>
     <form action="tranfer.php?account_id=<?php if (isset($account_id)) {echo $account_id;} ?>&person=<?php if (isset($to_account_id)) {echo $to_account_id;} ?>&M=<?php if (isset($M)) {echo $M;} ?>&comment=<?php if (isset($comment)) {echo $comment;} ?>&" method="post">     
             <!--<p>tranfer <?php if (isset($to_account_id)) {echo $to_account_id;} ?>"</p>-->
-            <h1><input type="submit" value="CONTINUE" style="background-color:#003366; color:white; font-size:13px; border-radius:5px; font-family:verdana;"></h1>
+            <h1><input type="submit" value="OK" style="background-color:#003366; color:white; font-size:13px; border-radius:5px; font-family:verdana;"></h1>
             <hr>
         </form>
-    <a href="data_people.php?account_id=<?php if (isset($account_id)) {echo $account_id;} ?>">BACK</a> 
+    <a href="data_people.php?account_id=<?php if (isset($account_id)) {echo $account_id;} ?>">CANCEL</a> 
 
 </body>
-
 </html>
