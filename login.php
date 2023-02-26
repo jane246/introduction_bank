@@ -12,7 +12,7 @@
         height: 100vh;
         background: #a4b6d7;
         overflow: hidden;
-        background-image: url();
+        background-image: url(https://photo-cdn2.icons8.com/zOojZchXui9qwAFm71djFaeUrkoYPornHh-r7w42ZoI/rs:fit:576:384/czM6Ly9pY29uczgu/bW9vc2UtcHJvZC5l/eHRlcm5hbC9hMmE0/Mi84NWU0ZWRlZDdj/OGE0NTdhYjlhZTVj/ZjRhZTY4MDQ5Mi5q/cGc.webp);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat; 
