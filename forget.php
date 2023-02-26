@@ -27,7 +27,7 @@
 </head>
 <body>
     <form>
-        <p><img src="./images/forget1.png" width="300px" height="300px"></p><br>
+        <p><img src="./images/14.png" width="300px" height="300px"></p><br>
         <br>
         <a1>Please contact the bank.</a1>
         <br>
