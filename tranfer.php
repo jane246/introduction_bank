@@ -75,7 +75,7 @@
 }
     ?>   
     <center><a1>
-    <center><img src="./images/20.png" width="45%" height="70%"> </center>
+    <center><img src="./images/20.png" width="45%" height="80%"> </center>
     <?php
     require("connect.php");
     $account_id = $_GET["account_id"];
