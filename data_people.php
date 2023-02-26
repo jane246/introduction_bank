@@ -150,25 +150,12 @@
     ?>
 
     <p3>
-        <form action="data_people.php?account_id=<?php if (isset($account_id)) {
-                                                        echo $account_id;
-                                                    } ?>" method="post">
+        <form action="data_people.php?account_id=<?php if (isset($account_id)) {echo $account_id;} ?>" method="post">
             <input type="hidden" name="account_id" value="<?php print($account_id); ?>">
             <label>Person</label> <input type="text" name="person" placeholder="เลขบัญชีผู้รับ"><br>
             <label>Money</label> <input type="text" name="M" placeholder="โอนเงิน"><br>
-            <label>Comment</label> <input type="text" name="comment"><br>
-
-            <h1><input type="submit" value="TRANFER" <?php
-                                                        require("connect.php");
-                                                        $to_account_id = $_POST["person"];
-                                                        $sql = "SELECT ALL * FROM bank WHERE account_id='$to_account_id'";
-                                                        $result = $conn->query($sql);
-                                                        if ($result->num_rows > 0) {
-                                                            $row = $result->fetch_assoc();
-                                                            if ($to_account_id == $row['account_id']) {
-                                                            }
-                                                        }
-                                                        ?> onclick="return confirm('Are you sure to tranfer to <?php print($account_id); ?> ?')" style="background-color:#003366; color:white; font-size:13px; border-radius:5px; font-family:verdana;"></h1>
+            <label>Comment</label> <input type="text" name="comment"><br>         
+            <h1><input type="submit" value="TRANFER"  onclick="return confirm('Are you sure to tranfer ?')" style="background-color:#003366; color:white; font-size:13px; border-radius:5px; font-family:verdana;"></h1>
             <hr>
         </form>
     </p3>
