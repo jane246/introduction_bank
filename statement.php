@@ -50,7 +50,7 @@
         }
 
         table {
-            width: 100%;
+            width: 70%;
             max-width: 100%;
         }
         a{

@@ -28,9 +28,19 @@
         margin-bottom: 10px;
         font-size: 180%;
     }
+    .from-0{
+        position:relative;
+        width: 400px;
+        height: 450px;
+        background: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     </style>
 </head>
 <body>
+    <div class="from-0">
     <form action="login.php" method="post">
     <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -65,5 +75,6 @@ if ($result->num_rows > 0) {
         <p><input type = "submit" value = "Login" style = "background-color:#003366; color:white; font-size:30px; border-radius:5px;"></p>
                     
     </form> 
+    </div>
 </body>
 </html>
