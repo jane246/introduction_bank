@@ -13,16 +13,21 @@
     if ($result->num_rows > 0)
         $row = $result->fetch_assoc();
         //$sum=$row['money']+$deposit;
+            if($deposit>0){
+            $dep = $row['money'] + $deposit;
 
-        $dep = $row['money'] + $deposit;
-
-        $sql = "INSERT INTO statement(account_id,deposit,withdraw,time,comment)";
-        $sql.=" VALUES('$account_id','$deposit','0',NOW(),'$comment')";
-        $conn->query($sql);
-        $sql = "UPDATE bank SET money = '{$dep}' WHERE account_id = '{$account_id}'";
-        $conn->query($sql);
-        $conn->close();
-    header( "location: data_people.php?account_id=$account_id" );
+            $sql = "INSERT INTO statement(account_id,deposit,withdraw,time,comment)";
+            $sql.=" VALUES('$account_id','$deposit','0',NOW(),'$comment')";
+            $conn->query($sql);
+            $sql = "UPDATE bank SET money = '{$dep}' WHERE account_id = '{$account_id}'";
+            $conn->query($sql);
+            $conn->close();
+            header( "location: data_people.php?account_id=$account_id" );
+        }
+        else
+        {
+            header( "location: error_data_people.php?account_id=$account_id" );
+        }
 ?>  
 
 </form>

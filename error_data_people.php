@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>BANK</title>
 <style>
     body {
         display: flex;
@@ -24,16 +22,20 @@
         font-size: 150%;
     }
 </style>
-</head>
-<body>
+<body> 
+
     <form>
-        <p><img src="./images/14.png" width="300px" height="300px"></p><br>
+        <p><img src="./images/error.png" width="310px" height="310px"></p><br>
         <br>
-        <a1>Please contact the bank.</a1>
-        <br>
-        <a1>Tel. 08X-XXX-XXXX</a1>
-        <br>  
-        <a href="login.php">Oh! , I understand</a>             
+        <a1>Please check the transaction</a1>
+        <br> 
+        <?php
+        require("connect.php");
+        $account_id=$_GET["account_id"];
+        ?>
+        <a href="data_people.php?account_id=<?php echo $account_id; ?>">Back</a>           
     </form>  
+
+</form>
 </body>
 </html>

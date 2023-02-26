@@ -13,7 +13,7 @@
     if ($result->num_rows > 0)
         $row = $result->fetch_assoc();
         //$sum=$row['money']+$deposit;
-
+        if($withdraw<=$row['money']&&$withdraw>='0'){
         $with = $row['money'] - $withdraw;
 
         $sql = "INSERT INTO statement(account_id,deposit,withdraw,time,comment)";
@@ -25,6 +25,12 @@
         $conn->query($sql);
         $conn->close();
         header( "location: data_people.php?account_id=$account_id" );
+        header( "location: data_people.php?account_id=$account_id" );
+    }
+    else
+    {
+        header( "location: error_data_people.php?account_id=$account_id" );
+    }
 ?>  
 
 </form>
