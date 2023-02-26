@@ -37,15 +37,6 @@
         font-size: 130%;
 
     }
-    .from-0{
-        position:relative;
-        width: 400px;
-        height: 450px;
-        background: red;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     </style>
 </head>
 <body>
