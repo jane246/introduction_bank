@@ -72,8 +72,8 @@ if ($result->num_rows > 0) {
         <label>Username :</label> <input type = "text" name = "account_name" placeholder ="ชื่อบัญชี" required> <br>
         <label>Password :</label> <input type = "text" name = "password"placeholder ="รหัสผ่าน" required><br>
          
-        <a href="forget.php">FORGET</a>
-        <a href="create.php?">CREATE</a>  
+        <a href="forget.php">FORGET</a><br>
+        <a>Don't have an account?  </a><a href="create.php?">CREATE</a>  
         <br>
         <p><input type = "submit" value = "Login" style = "background-color:#76D7C4; color:black; font-size:30px; border-radius:5px;"></p>
                     
