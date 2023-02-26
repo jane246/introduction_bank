@@ -42,16 +42,25 @@
         justify-content: space-between;
         align-items: center;
     }
+    b{
+        font-family:verdana;
+        color: #000033;
+        font-size: 200%;
+    }
+    cc{
+        color:#C0392B;
+        font-size: 130%;
+    }
     
 </style>
 </head>
 <body>
-<img src="./images/13.png" width="30%" height="70%">
-
+<img src="./images/10.png" width="25%" height="60%">
 <header>
     <div class="container0">
         <nav>
             <ul>
+                <cc>
             <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 require("connect.php");
@@ -77,20 +86,20 @@ $err = [];
 if ($result->num_rows > 0){
     $row = $result->fetch_assoc();
     if($row['email']==$email && $row['account_name']==$account_name){
-        echo "duplicate email and account name ";
+        echo "duplicate email and account name!! ";
         /*$sql="INSERT INTO wait(id_card,titlename,name,number,email,birthday,age,account_name,money,address,password)";
         $sql.=" VALUES('$id_card','$titlename','$name','$number','This email address is already in use','$birthday','$age','This account name address is already in use','$money','$address','$password')";
         $conn->query($sql);*/
         
     }
     else if($row['email']==$email){
-        echo "duplicate email";
+        echo "duplicate email!!";
         /*$sql="INSERT INTO wait(id_card,titlename,name,number,email,birthday,age,account_name,money,address,password)";
         $sql.=" VALUES('$id_card','$titlename','$name','$number','This email address is already in use','$birthday','$age','$account_name','$money','$address','$password')";
         $conn->query($sql);*/
     }
     else if($row['account_name']==$account_name){
-        echo "duplicate account name";
+        echo "duplicate account name!!";
         /*$sql="INSERT INTO wait(id_card,titlename,name,number,email,birthday,age,account_name,money,address,password)";
         $sql.=" VALUES('$id_card','$titlename','$name','$number','$email','$birthday','$age','This account name address is already in use','$money','$address','$password')";
         $conn->query($sql);*/
@@ -111,13 +120,14 @@ $conn->close();*/
 //header( "location: data_people.php" );
 }
 ?>
+</cc>
             </ul>
         </nav>
     </div>
 
 
 <div class="container1">
-
+<b>CREATE YOUR ACCOUNT</b><br><br>
 <form action="create.php" method="post">
     <label>ID Card :</label> <input type="text" name="id_card" placeholder ="เลขบัตรประจำตัวประชาชน" required value = "<?php if (isset($id_card)){ echo $id_card;} ?>"><br>
     <label>Titie name :</label>
@@ -144,7 +154,6 @@ $conn->close();*/
             if(age !=""){document.getElementById('age').value = age;}}
         </script>
     <label readonly="readonly"></label> <br>
-
     <label>Age :</label> <input type="text" id="age" name="age" required value = "<?php if (isset($age)){ echo $age;} ?>"><br>
     <label>Account name :</label> <input type="text" name="account_name"placeholder ="ชื่อบัญชี" required value = "<?php if (isset($account_name)){ echo $account_name;} ?>"> <br>
     <label>Money :</label> <input type="text" name="money" placeholder ="เงินฝากเริ่มต้น" required value = "<?php if (isset($money)){ echo $money;} ?>"><br>

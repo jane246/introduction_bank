@@ -12,7 +12,7 @@
         height: 100vh;
         background: #a4b6d7;
         overflow: hidden;
-        background-image: url(https://photo-cdn2.icons8.com/zOojZchXui9qwAFm71djFaeUrkoYPornHh-r7w42ZoI/rs:fit:576:384/czM6Ly9pY29uczgu/bW9vc2UtcHJvZC5l/eHRlcm5hbC9hMmE0/Mi84NWU0ZWRlZDdj/OGE0NTdhYjlhZTVj/ZjRhZTY4MDQ5Mi5q/cGc.webp);
+        background-image: url(https://c4.wallpaperflare.com/wallpaper/743/421/76/geometry-abstract-lines-digital-art-wallpaper-preview.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat; 
@@ -27,11 +27,22 @@
         width: 150px;
         margin-bottom: 10px;
         font-size: 180%;
+        color:white;
     }
+    a{
+        color:#76D7C4;
+    }
+    a1{
+        color:#FDFEFE;
+        font-size: 130%;
+
+    }
+    
     </style>
 </head>
 <body>
     <form action="login.php" method="post">
+        <a1>
     <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     require("connect.php");
@@ -43,6 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $conn->query($sql);
     $conn->close();
 //แก้ไข
+
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     $account_id=$row["account_id"];
@@ -55,6 +67,7 @@ if ($result->num_rows > 0) {
 }
 }
 ?>
+</a1>
         <p><img src="./images/login.png" width="250px" height="200px"></p><br>
         <label>Username :</label> <input type = "text" name = "account_name" placeholder ="ชื่อบัญชี" required> <br>
         <label>Password :</label> <input type = "text" name = "password"placeholder ="รหัสผ่าน" required><br>
@@ -62,7 +75,7 @@ if ($result->num_rows > 0) {
         <a href="forget.php">FORGET</a>
         <a href="create.php?">CREATE</a>  
         <br>
-        <p><input type = "submit" value = "Login" style = "background-color:#003366; color:white; font-size:30px; border-radius:5px;"></p>
+        <p><input type = "submit" value = "Login" style = "background-color:#76D7C4; color:black; font-size:30px; border-radius:5px;"></p>
                     
     </form> 
 </body>
